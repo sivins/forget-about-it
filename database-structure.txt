@@ -1,0 +1,98 @@
+User
+----
+UserId int
+UserName varchar
+Password varchar
+Active bit
+PaycheckStartDate date
+PaycheckFrequencyId int
+PaycheckAmount decimal
+EnteredStamp datetime
+UpdatedStamp datetime
+
+ToDo
+----
+ToDoId int
+UserId int
+ContextId int
+Description varchar
+EnteredStamp datetime
+UpdatedStamp datetime
+
+Grocery
+-------
+GroceryId int
+UserId int
+Description varchar
+EstimatedPrice decimal
+EnteredStamp datetime
+UpdatedStamp datetime
+
+Bill
+----
+BillId int
+UserId int
+Description varchar
+Autodraft bit
+StartingDueDate date
+DaysUntilNextDueDate int
+EnteredStamp datetime
+UpdatedStamp datetime
+
+BillPayment
+-----------
+BillPaymentId int
+UserId int
+BillId int
+AccountId int
+CheckingAccountTransactionId varchar
+PaidDate date
+ConfirmationNumber varchar
+Notes varchar
+EnteredStamp datetime
+UpdatedStamp datetime
+
+Account
+-------
+AccountId int
+UserId int
+AccountTypeId int
+Description varchar
+Balance decimal
+EnteredStamp datetime
+UpdatedStamp datetime
+
+Purchase
+--------
+PurchaseId int
+UserId int
+PurchaseCategoryId int
+AccountId int
+CheckingAccountTransactionId varchar
+Description varchar
+Amount decimal
+PurchaseDate date
+EnteredStamp datetime
+UpdatedStamp datetime
+
+(Picklists)
+
+PaycheckFrequency
+-----------------
+PaycheckFrequencyId int
+Description varchar
+
+AccountType
+-----------
+AccountTypeId int
+Description varchar
+
+PurchaseCategory
+----------------
+PurchaseCategoryId int
+Description varchar
+
+Context
+-------
+ContextId
+Description varchar
