@@ -5,7 +5,6 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { QuickAddPurchaseComponent } from './quick-add-purchase/quick-add-purchase.component';
-import { QuickAdTodoComponent } from './quick-ad-todo/quick-ad-todo.component';
 import { QuickAddTodoComponent } from './quick-add-todo/quick-add-todo.component';
 import { QuickAddGroceryComponent } from './quick-add-grocery/quick-add-grocery.component';
 import { TodosComponent } from './todos/todos.component';
@@ -14,6 +13,7 @@ import { BudgetSummaryComponent } from './budget-summary/budget-summary.componen
 import { MonthComponent } from './month/month.component';
 import { PurchasesComponent } from './purchases/purchases.component';
 import { BillsComponent } from './bills/bills.component';
+import { AppRoutingModule } from './app-routing.module';
 
 
 @NgModule({
@@ -21,7 +21,6 @@ import { BillsComponent } from './bills/bills.component';
     AppComponent,
     HomeComponent,
     QuickAddPurchaseComponent,
-    QuickAdTodoComponent,
     QuickAddTodoComponent,
     QuickAddGroceryComponent,
     TodosComponent,
@@ -32,7 +31,8 @@ import { BillsComponent } from './bills/bills.component';
     BillsComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
