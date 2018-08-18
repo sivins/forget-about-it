@@ -1,0 +1,44 @@
+Home Page
+---------
+Quick buttons:
+    Add purchase
+    Add todo
+    Add grocery list item
+
+Desktop three columns, mobile one stacked columns
+    Todos
+    Grocery list
+
+Todos
+-----
+Filter by context
+
+Grocery list
+------------
+Filter by location
+
+Budgeting
+---------
+Upcoming bills
+Account balances
+Recent purchases
+Add Bill
+
+Month
+-----
+Bills per paycheck with total
+
+Bills
+-----
+List of bills with "Pay" buttons
+Plan to pay date
+Total amount to pay by date
+
+Purchases
+---------
+Add button
+Amount spent by category with configurable date range
+
+Bill Payments
+-------------
+Add button

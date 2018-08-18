@@ -25,6 +25,7 @@ GroceryId int
 UserId int
 Description varchar
 EstimatedPrice decimal
+Location varchar
 EnteredStamp datetime
 UpdatedStamp datetime
 
