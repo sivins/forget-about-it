@@ -11,13 +11,13 @@ export class UserService {
 
   constructor(private http: HttpClient) { }
 
-  setUser(username: string) {
+  set(username: string) {
     this.http.get(`http://localhost:3000/api/v1/user/${username}`).subscribe((response: User) => {
       this._userSubject.next(response);
     });
   }
 
-  getUser(): Observable<User> {
+  get(): Observable<User> {
     return this._userSubject.asObservable();
   }
 }

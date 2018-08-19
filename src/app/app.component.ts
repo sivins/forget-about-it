@@ -14,7 +14,7 @@ export class AppComponent {
     private userService: UserService,
     private picklistService: PicklistService
   ) {
-    userService.setUser('default_user');
-    picklistService.setPicklists();
+    userService.set('default_user');
+    picklistService.set();
   }
 }

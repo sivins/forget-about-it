@@ -11,7 +11,7 @@ export class PicklistService {
 
   constructor(private http: HttpClient) { }
 
-  setPicklists() {
+  set() {
     // TODO: Uncomment this when API method is implemented
     /*
     this.http.get(`http://localhost:3000/api/v1/picklists`).subscribe((response: Picklists) => {
@@ -20,7 +20,7 @@ export class PicklistService {
     */
   }
 
-  getPicklists(): Observable<Picklists> {
+  get(): Observable<Picklists> {
     return this._userSubject.asObservable();
   }
 }
