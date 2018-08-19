@@ -14,7 +14,6 @@ export class UserService {
   setUser(username: string) {
     this.http.get(`http://localhost:3000/api/v1/user/${username}`).subscribe((response: User) => {
       this._userSubject.next(response);
-      console.log(response);
     });
   }
 

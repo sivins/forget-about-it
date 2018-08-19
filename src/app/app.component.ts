@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { UserService } from './services/user.service';
+import { PicklistService } from './services/picklist.service';
 
 @Component({
   selector: 'app-root',
@@ -10,8 +11,10 @@ export class AppComponent {
   title = 'app';
 
   constructor(
-    private userService: UserService
+    private userService: UserService,
+    private picklistService: PicklistService
   ) {
     userService.setUser('default_user');
+    picklistService.setPicklists();
   }
 }

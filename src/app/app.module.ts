@@ -17,6 +17,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { UserService } from './services/user.service';
+import { PicklistService } from './services/picklist.service';
 
 
 @NgModule({
@@ -39,7 +40,7 @@ import { UserService } from './services/user.service';
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [UserService],
+  providers: [UserService, PicklistService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

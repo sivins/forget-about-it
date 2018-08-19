@@ -27,7 +27,6 @@ export class QuickAddPurchaseComponent implements OnInit {
   ngOnInit() {
     this.userService.getUser().subscribe((user: User) => {
       this.user = user;
-      console.log(this.user);
     });
   }
 
