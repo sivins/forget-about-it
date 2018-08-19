@@ -9,6 +9,7 @@ import { TodosComponent } from './components/todos/todos.component';
 import { BillsComponent } from './components/bills/bills.component';
 import { BudgetSummaryComponent } from './components/budget-summary/budget-summary.component';
 import { GroceriesComponent } from './components/groceries/groceries.component';
+import { QuickAddPurchaseComponent } from './components/quick-add-purchase/quick-add-purchase.component';
 
 const appRoutes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -17,7 +18,7 @@ const appRoutes: Routes = [
   { path: 'purchases', component: PurchasesComponent },
   { path: 'quick-add-todo', component: QuickAddTodoComponent },
   { path: 'quick-add-grocery', component: QuickAddGroceryComponent },
-  { path: 'quick-add-purchase', component: QuickAddGroceryComponent },
+  { path: 'quick-add-purchase', component: QuickAddPurchaseComponent },
   { path: 'todos', component: TodosComponent },
   { path: 'bills', component: BillsComponent },
   { path: 'budget-summary', component: BudgetSummaryComponent },

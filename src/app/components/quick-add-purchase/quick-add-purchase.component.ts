@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 import { Purchase } from '../../models/purchase';
 import { User } from '../../models/user';
+import { UserService } from '../../services/user.service';
 
 @Component({
   selector: 'app-quick-add-purchase',
@@ -19,9 +20,15 @@ export class QuickAddPurchaseComponent implements OnInit {
 
   user: User;
 
-  constructor() { }
+  constructor(
+    private userService: UserService
+  ) { }
 
   ngOnInit() {
+    this.userService.getUser().subscribe((user: User) => {
+      this.user = user;
+      console.log(this.user);
+    });
   }
 
   onSubmit() {
